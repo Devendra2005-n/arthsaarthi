@@ -1,0 +1,39 @@
+{
+  "financial_year": "2025-26",
+  "new_regime": {
+    "standard_deduction": 75000,
+    "slabs": [
+      {"min": 0, "max": 400000, "rate": 0.00},
+      {"min": 400001, "max": 800000, "rate": 0.05},
+      {"min": 800001, "max": 1200000, "rate": 0.10},
+      {"min": 1200001, "max": 1600000, "rate": 0.15},
+      {"min": 1600001, "max": 2000000, "rate": 0.20},
+      {"min": 2000001, "max": 2400000, "rate": 0.25},
+      {"min": 2400001, "max": 999999999, "rate": 0.30}
+    ],
+    "rebate_87a_income_limit": 1200000,
+    "rebate_87a_amount": 60000
+  },
+  "old_regime": {
+    "standard_deduction": 50000,
+    "slabs": [
+      {"min": 0, "max": 250000, "rate": 0.00},
+      {"min": 250001, "max": 500000, "rate": 0.05},
+      {"min": 500001, "max": 1000000, "rate": 0.20},
+      {"min": 1000001, "max": 999999999, "rate": 0.30}
+    ],
+    "rebate_87a_income_limit": 500000,
+    "rebate_87a_amount": 12500,
+    "section_80c_limit": 150000,
+    "section_80d_self_below60": 25000,
+    "section_80d_self_above60": 50000,
+    "section_80d_parents_below60": 25000,
+    "section_80d_parents_above60": 50000,
+    "section_80ccd_1b_limit": 50000,
+    "section_24b_home_loan_limit": 200000,
+    "hra_metro_percent": 50,
+    "hra_nonmetro_percent": 40,
+    "hra_basic_percent": 10
+  },
+  "cess_percent": 4
+}

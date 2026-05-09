@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_expense">खर्च जोड़ें</string>
+    <string name="add_income">आय जोड़ें</string>
+    <string name="amount">राशि</string>
+    <string name="app_name">अर्थसारथी</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="category">श्रेणी</string>
+    <string name="expenses">खर्च</string>
+    <string name="goals">लक्ष्य</string>
+    <string name="home">होम</string>
+    <string name="income">आय</string>
+    <string name="investments">निवेश</string>
+    <string name="merchant">दुकान / मर्चेंट</string>
+    <string name="net_worth">कुल संपत्ति</string>
+    <string name="next">आगे</string>
+    <string name="no_transactions">अभी तक कोई लेनदेन नहीं</string>
+    <string name="note">नोट</string>
+    <string name="payment_mode">भुगतान का तरीका</string>
+    <string name="privacy_note">आपका डेटा केवल आपके फ़ोन में रहता है</string>
+    <string name="recent_transactions">हाल के लेनदेन</string>
+    <string name="save">सेव करें</string>
+    <string name="saved">बचाया</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="spent">खर्च किया</string>
+    <string name="tap_to_add">+ दबाकर पहला खर्च जोड़ें</string>
+    <string name="tax">टैक्स</string>
+    <string name="this_month">इस महीने</string>
+</resources>

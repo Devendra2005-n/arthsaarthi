@@ -1,0 +1,82 @@
+╔═══════════════════════════════════════════════════╗
+║         ArthSaarthi - How to Open in             ║
+║              Android Studio                       ║
+╚═══════════════════════════════════════════════════╝
+
+STEP 1: OPEN IN ANDROID STUDIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open Android Studio
+2. Click "Open" (NOT "New Project")
+3. Navigate to this ArthSaarthi folder
+4. Click "OK"
+
+STEP 2: WAIT FOR GRADLE SYNC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Android Studio will automatically:
+- Download Gradle 8.0
+- Download all dependencies
+- Sync the project
+This takes 5-15 minutes on first time.
+Make sure internet is connected!
+
+STEP 3: ADD GOOGLE SERVICES (Firebase)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Go to firebase.google.com
+2. Create new project "ArthSaarthi"
+3. Add Android app with package: in.arthsaarthi
+4. Download google-services.json
+5. Place it in: ArthSaarthi/app/google-services.json
+
+If you want to skip Firebase for now:
+- Remove these 3 lines from app/build.gradle:
+  apply plugin: 'com.google.gms.google-services'
+  apply plugin: 'com.google.firebase.crashlytics'
+  And remove Firebase dependencies
+
+STEP 4: RUN THE APP
+━━━━━━━━━━━━━━━━━━
+1. Connect your Android phone via USB
+2. Enable Developer Options + USB Debugging on phone
+3. Click the green Run ▶ button in Android Studio
+4. Select your phone
+5. App will install and open!
+
+OR use the Android Emulator:
+- Tools → Device Manager → Create Device
+- Choose Pixel 4, API 30+
+- Click Run ▶
+
+STEP 5: PUSH TO GITHUB
+━━━━━━━━━━━━━━━━━━━━━
+1. Create repo on github.com named "arthsaarthi"
+2. Open terminal in Android Studio (View → Tool Windows → Terminal)
+3. Run:
+   git init
+   git add .
+   git commit -m "Initial ArthSaarthi project"
+   git remote add origin https://github.com/YOURNAME/arthsaarthi.git
+   git push -u origin main
+
+═══════════════════════════════════════════════════
+WHAT IS BUILT:
+✅ Onboarding (5 screens, 12 language support)
+✅ Home Dashboard (net worth, monthly summary)
+✅ Add Transaction (numpad + voice input Hindi)
+✅ Expense List (swipe to delete)
+✅ Investment Tracker (SIP, FD, Gold, PPF, NPS)
+✅ Tax Optimizer (Old vs New regime, 80C status)
+✅ Financial Goals (Ghar, Shaadi, Education etc.)
+✅ Settings (language switch, profile)
+✅ SMS Auto-categorization (Indian banks)
+✅ Voice Input (Hindi rule-based parser)
+✅ Government Schemes eligibility checker
+✅ Complete offline-first Room DB (8 entities)
+✅ Hilt dependency injection
+✅ Clean Architecture
+✅ Go backend (tax API + schemes API)
+✅ Python data scripts (AMFI NAV, Gold rates)
+✅ GitHub Actions workflow (daily data fetch)
+✅ Hindi + Marathi + English strings
+
+TOTAL COST TO RUN: ₹0
+═══════════════════════════════════════════════════

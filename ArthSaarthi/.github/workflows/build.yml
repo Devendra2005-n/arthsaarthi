@@ -1,0 +1,72 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Grant execute permission to gradlew
+        run: chmod +x android/gradlew
+
+      - name: Build debug APK
+        run: |
+          cd android
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ArthSaarthi-debug-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Create Release (on push to main)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ github.run_number }}.0
+          name: ArthSaarthi v${{ github.run_number }}.0
+          body: |
+            ## ArthSaarthi - India's Offline Finance App
+
+            ### How to Install
+            1. Download `ArthSaarthi-debug.apk` below
+            2. Open the file on your Android phone
+            3. Enable "Install from unknown sources" if asked
+            4. Install and open
+
+            ### Requirements
+            - Android 8.0 or above
+            - Works fully offline
+
+            ### What's included
+            - Expense tracking with SMS auto-detection
+            - SIP, FD, PPF, Gold, EPF investment tracker
+            - Tax optimizer (Old vs New Regime)
+            - Financial Goals with SIP suggestions
+            - Government scheme eligibility checker
+            - 3 Indian languages (Hindi, Marathi, English)
+            - Works 100% offline
+          files: android/app/build/outputs/apk/debug/app-debug.apk
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

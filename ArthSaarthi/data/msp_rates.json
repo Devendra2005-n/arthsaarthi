@@ -1,0 +1,27 @@
+{
+  "year": "2024-25",
+  "source": "Government of India - CACP",
+  "kharif_crops": [
+    {"crop": "Paddy (Common)", "msp_per_quintal": 2300, "season": "Kharif", "sow": "June", "harvest": "November"},
+    {"crop": "Paddy (Grade A)", "msp_per_quintal": 2320, "season": "Kharif", "sow": "June", "harvest": "November"},
+    {"crop": "Jowar (Hybrid)", "msp_per_quintal": 3371, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Bajra", "msp_per_quintal": 2625, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Maize", "msp_per_quintal": 2225, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Tur (Arhar)", "msp_per_quintal": 7550, "season": "Kharif", "sow": "June", "harvest": "November"},
+    {"crop": "Moong", "msp_per_quintal": 8682, "season": "Kharif", "sow": "June", "harvest": "September"},
+    {"crop": "Urad", "msp_per_quintal": 7400, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Groundnut", "msp_per_quintal": 6783, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Soybean", "msp_per_quintal": 4892, "season": "Kharif", "sow": "June", "harvest": "October"},
+    {"crop": "Cotton (Medium Staple)", "msp_per_quintal": 7121, "season": "Kharif", "sow": "May", "harvest": "November"},
+    {"crop": "Cotton (Long Staple)", "msp_per_quintal": 7521, "season": "Kharif", "sow": "May", "harvest": "November"},
+    {"crop": "Sugarcane", "msp_per_quintal": 340, "season": "Annual", "sow": "January", "harvest": "December"}
+  ],
+  "rabi_crops": [
+    {"crop": "Wheat", "msp_per_quintal": 2275, "season": "Rabi", "sow": "November", "harvest": "March"},
+    {"crop": "Barley", "msp_per_quintal": 1735, "season": "Rabi", "sow": "October", "harvest": "March"},
+    {"crop": "Gram (Chana)", "msp_per_quintal": 5440, "season": "Rabi", "sow": "October", "harvest": "February"},
+    {"crop": "Masur (Lentil)", "msp_per_quintal": 6425, "season": "Rabi", "sow": "October", "harvest": "February"},
+    {"crop": "Rapeseed/Mustard", "msp_per_quintal": 5650, "season": "Rabi", "sow": "October", "harvest": "February"},
+    {"crop": "Safflower", "msp_per_quintal": 5800, "season": "Rabi", "sow": "October", "harvest": "February"}
+  ]
+}

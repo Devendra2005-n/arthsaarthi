@@ -1,0 +1,4 @@
+#!/bin/sh
+# Gradle wrapper script
+# Android Studio regenerates this - just open project in Android Studio and sync
+exec gradle "$@"

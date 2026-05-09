@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string add_expense
+string add_income
+string amount
+string app_name
+string cancel
+string category
+string expenses
+string goals
+string home
+string income
+string investments
+string merchant
+string net_worth
+string next
+string no_transactions
+string note
+string payment_mode
+string privacy_note
+string recent_transactions
+string save
+string saved
+string settings
+string spent
+string tap_to_add
+string tax
+string this_month
+style Theme.ArthSaarthi

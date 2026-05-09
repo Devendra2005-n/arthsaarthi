@@ -1,0 +1,44 @@
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android app build outputs (except APK for releases)
+android/app/build/
+android/build/
+android/.gradle/
+
+# Keystore — NEVER commit this
+*.jks
+*.keystore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Go
+backend/bin/
+backend/*.exe
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive data
+google-services.json
